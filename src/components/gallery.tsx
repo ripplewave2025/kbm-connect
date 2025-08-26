@@ -10,9 +10,9 @@ import {
 const galleryItems = [
   {
     src: '/gallery/bhanteji.jpg',
-    alt: 'Venerable Dhammaviriyo Mahathero',
+    alt: 'Our Founder, Venerable Dhamma Dhiroo',
     aiHint: 'monk portrait',
-    caption: 'Our founder, Venerable Dhammaviriyo Mahathero.',
+    caption: 'Our Founder, Venerable Dhamma Dhiroo',
   },
   {
     src: '/gallery/bhanteji1.jpg',
