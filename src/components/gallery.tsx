@@ -1,4 +1,11 @@
 import Image from 'next/image';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
 
 const galleryItems = [
   {
@@ -25,6 +32,18 @@ const galleryItems = [
     aiHint: 'child smiling',
     caption: 'Nurturing hope and happiness every day.',
   },
+  {
+    src: 'https://picsum.photos/800/601',
+    alt: 'New dormitory building',
+    aiHint: 'dormitory building',
+    caption: 'Our modern and safe dormitory facilities.',
+  },
+  {
+    src: 'https://picsum.photos/800/602',
+    alt: 'Students in computer lab',
+    aiHint: 'computer lab students',
+    caption: 'Equipping students with modern IT skills.',
+  },
 ];
 
 export default function Gallery() {
@@ -35,24 +54,37 @@ export default function Gallery() {
           <h2 className="font-headline text-3xl md:text-4xl font-bold">Gallery</h2>
           <p className="mt-2 text-lg text-muted-foreground">A glimpse into daily life at the Kripasaran Buddhist Mission.</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {galleryItems.map((item, index) => (
-            <div key={index} className="group relative overflow-hidden rounded-xl shadow-lg">
-              <Image
-                src={item.src}
-                alt={item.alt}
-                width={800}
-                height={600}
-                className="object-cover w-full h-full transform transition-transform duration-300 group-hover:scale-105"
-                data-ai-hint={item.aiHint}
-              />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300" />
-              <div className="absolute bottom-0 left-0 p-4">
-                <p className="text-white text-sm font-semibold">{item.caption}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+        <Carousel
+          opts={{
+            align: 'start',
+            loop: true,
+          }}
+          className="w-full max-w-5xl mx-auto"
+        >
+          <CarouselContent>
+            {galleryItems.map((item, index) => (
+              <CarouselItem key={index} className="sm:basis-1/2 lg:basis-1/3">
+                <div className="p-1">
+                  <div className="group relative overflow-hidden rounded-xl shadow-lg aspect-[4/3]">
+                    <Image
+                      src={item.src}
+                      alt={item.alt}
+                      fill
+                      className="object-cover transform transition-transform duration-300 group-hover:scale-105"
+                      data-ai-hint={item.aiHint}
+                    />
+                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300" />
+                    <div className="absolute bottom-0 left-0 p-4">
+                      <p className="text-white text-sm font-semibold">{item.caption}</p>
+                    </div>
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
       </div>
     </section>
   );
