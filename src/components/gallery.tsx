@@ -68,12 +68,6 @@ const galleryItems = [
     aiHint: 'student achievement',
     caption: 'Another story of achievement and hope.',
   },
-  {
-    src: 'https://picsum.photos/800/600',
-    alt: 'Children studying in a classroom',
-    aiHint: 'children studying',
-    caption: 'Bright minds at work in our classrooms.',
-  },
 ];
 
 export default function Gallery() {
