@@ -14,8 +14,8 @@ export default function Footer() {
           <Link href="/" className="text-sm font-medium hover:underline underline-offset-4">
             Home
           </Link>
-          <Link href="/summarize" className="text-sm font-medium hover:underline underline-offset-4">
-            Summarize
+          <Link href="/about" className="text-sm font-medium hover:underline underline-offset-4">
+            About
           </Link>
           <Link href="/login" className="text-sm font-medium hover:underline underline-offset-4">
             Login

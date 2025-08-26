@@ -8,7 +8,7 @@ export default function Header() {
     { href: '/#mission', label: 'Mission' },
     { href: '/#news', label: 'News' },
     { href: '/#gallery', label: 'Gallery' },
-    { href: '/summarize', label: 'Summarizer' },
+    { href: '/about', label: 'About' },
     { href: '/#get-involved', label: 'Contact' },
   ];
 
