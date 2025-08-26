@@ -9,7 +9,7 @@ import {
 
 const galleryItems = [
   {
-    src: '/gallery/bhanteji.jpg',
+    src: '/gallery/bhanteji1.jpg',
     alt: 'Our Founder, Venerable Dhamma Dhiroo',
     aiHint: 'monk portrait',
     caption: 'founder Venerable Dhamma Dhiroo',
