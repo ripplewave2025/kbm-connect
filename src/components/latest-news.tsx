@@ -38,14 +38,6 @@ const newsItems = [
     tag: 'Completed',
     aiHint: 'girl dormitory',
   },
-  {
-    title: 'Educational Enrichment',
-    description: 'In 2023, a new computer lab with 10 computers and Wi-Fi was established, alongside a growing library, providing children with vital IT skills and learning resources.',
-    image: 'https://picsum.photos/600/400',
-    date: 'August 2023',
-    tag: 'Education',
-    aiHint: 'computer lab',
-  },
 ];
 
 export default function LatestNews() {
