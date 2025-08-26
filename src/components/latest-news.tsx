@@ -6,7 +6,7 @@ const newsItems = [
   {
     title: "Phase 1: A New Home for Boys",
     description: "The crumbling, 87-year-old boys' hostel was replaced with a new, safe multi-storey building, completed in 2014, providing a secure home for 60 boys.",
-    image: "https://picsum.photos/600/400",
+    image: "/hostel.jpg",
     date: "November 2014",
     tag: "Milestone",
     aiHint: "hostel building",
