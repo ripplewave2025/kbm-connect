@@ -4,39 +4,31 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 
 const newsItems = [
   {
-    title: 'New home for the boys and girls',
-    embed: (
-      <iframe
-        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0MiiKRDg6H1D3KuXaQyPt3ZMz5ba4Ze48vbqx782zsNUWFf5o8jkn6LHHimRXmsCNl%26id%3D100083859907985&show_text=true&width=500"
-        width="500"
-        height="600"
-        className="w-full"
-        style={{ border: 'none', overflow: 'hidden' }}
-        allowFullScreen={true}
-        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-      ></iframe>
-    ),
-    description: "Our new building provides a safe and modern home for both boys and girls, thanks to the generous support of our partners.",
-    image: null,
-    date: 'Recent Update',
-    tag: 'Community',
-    aiHint: 'facebook post',
-  },
-  {
-    title: 'Happy 79th Independence Day!',
-    description: "The children at KBM celebrated India's 79th Independence Day with a flag hoisting ceremony and cultural programs, thanks to the support from the Darjeeling Children's Trust.",
-    image: '/independenceday.png',
-    date: 'August 2023',
-    tag: 'Celebration',
-    aiHint: 'children celebrating',
-  },
-  {
-    title: 'Phase 2: Modern Hostels for Girls',
-    description: 'New dormitories and facilities were constructed for the girls between 2019 and 2021, replacing cramped quarters with bright, airy, and safe living spaces.',
+    title: 'A Brush with Art: The 2024 Art Competition',
+    description: "Our annual art competition was a huge success! The children showcased their incredible talent, with themes of nature and community. Thank you to everyone who participated and supported this wonderful event.",
     image: 'https://picsum.photos/600/400',
-    date: 'October 2021',
-    tag: 'Completed',
-    aiHint: 'girl dormitory',
+    date: 'June 2024',
+    tag: 'Event',
+    aiHint: 'children painting',
+    embed: null,
+  },
+  {
+    title: 'Nurturing Health: Our Latest Medical Camp',
+    description: 'We successfully conducted a comprehensive health check-up for all our children. Regular medical camps are a cornerstone of our commitment to their well-being, ensuring they grow up healthy and strong.',
+    image: 'https://picsum.photos/600/400',
+    date: 'May 2024',
+    tag: 'Health',
+    aiHint: 'child doctor',
+    embed: null,
+  },
+  {
+    title: 'Celebrating Success: Graduation Day',
+    description: 'Join us in congratulating our recent graduates! We are incredibly proud of their hard work and dedication. We wish them all the best as they embark on their next chapter.',
+    image: 'https://picsum.photos/600/400',
+    date: 'April 2024',
+    tag: 'Education',
+    aiHint: 'students graduating',
+    embed: null,
   },
 ];
 
