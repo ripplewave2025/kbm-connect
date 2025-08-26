@@ -10,6 +10,7 @@ const newsItems = [
         src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0MiiKRDg6H1D3KuXaQyPt3ZMz5ba4Ze48vbqx782zsNUWFf5o8jkn6LHHimRXmsCNl%26id%3D100083859907985&show_text=true&width=500"
         width="500"
         height="600"
+        className="w-full"
         style={{ border: 'none', overflow: 'hidden' }}
         allowFullScreen={true}
         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
@@ -60,11 +61,13 @@ export default function LatestNews() {
             <Card key={item.title} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader className="p-0">
                 {item.embed ? (
-                  <div className="aspect-w-16 aspect-h-9 w-full overflow-hidden flex justify-center">
-                    {item.embed}
+                  <div className="aspect-video w-full overflow-hidden flex justify-center items-center bg-white">
+                    <div className="h-[400px] w-full overflow-y-auto">
+                      {item.embed}
+                    </div>
                   </div>
                 ) : (
-                  <div className="aspect-w-16 aspect-h-9">
+                  <div className="aspect-video">
                     <Image
                       src={item.image!}
                       alt={item.title}
