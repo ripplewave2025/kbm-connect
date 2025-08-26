@@ -19,24 +19,13 @@ const newsItems = [
     ),
   },
   {
-    title: 'Nurturing Health: Our Latest Medical Camp',
-    description: 'We successfully conducted a comprehensive health check-up for all our children. Regular medical camps are a cornerstone of our commitment to their well-being, ensuring they grow up healthy and strong.',
-    image: null,
-    date: 'May 2024',
-    tag: 'Health',
-    aiHint: '',
-    embed: (
-      <iframe
-        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0LJohkTGDqdsoAUkZaVhThrsoeAJCzBYPMiEH8FpC6NHE8suWLvbQbBDMyNo3rEQsl%26id%3D100083859907985&show_text=true&width=500"
-        width="500"
-        height="744"
-        style={{ border: 'none', overflow: 'hidden' }}
-        scrolling="no"
-        frameBorder="0"
-        allowFullScreen={true}
-        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-      ></iframe>
-    ),
+    title: 'A Royal Visit: Strengthening Ties',
+    description: 'Honored to welcome Miss Siriporn Tantipanyathep, Royal Thai Consul-General, to our children’s home in Darjeeling. In celebration of His Majesty the King of Thailand’s birthday, the visit included generous donations and a wonderful tree-planting ceremony, symbolizing the growth and friendship between our communities.',
+    image: "https://picsum.photos/600/400",
+    date: 'June 2024',
+    tag: 'Event',
+    aiHint: 'dignitary visit',
+    embed: null,
   },
   {
     title: 'Celebrating Success: Graduation Day',
