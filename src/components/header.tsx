@@ -7,6 +7,7 @@ export default function Header() {
   const navLinks = [
     { href: '/#mission', label: 'Mission' },
     { href: '/#news', label: 'News' },
+    { href: '/#founder', label: 'Founder' },
     { href: '/about', label: 'About' },
     { href: '/#get-involved', label: 'Contact' },
   ];
