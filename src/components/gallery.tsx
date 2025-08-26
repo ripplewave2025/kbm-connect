@@ -9,6 +9,66 @@ import {
 
 const galleryItems = [
   {
+    src: '/bhanteji.jpg',
+    alt: 'Venerable Dhammaviriyo Mahathero',
+    aiHint: 'monk portrait',
+    caption: 'Our founder, Venerable Dhammaviriyo Mahathero.',
+  },
+  {
+    src: '/bhanteji1.jpg',
+    alt: 'Venerable Dhammaviriyo Mahathero with children',
+    aiHint: 'monk children',
+    caption: 'Guiding the next generation with wisdom.',
+  },
+  {
+    src: '/Gallery_Sikkimprogramme_HQ.jpg',
+    alt: 'Children at a program in Sikkim',
+    aiHint: 'children event',
+    caption: 'Cultural exchange during our Sikkim programme.',
+  },
+  {
+    src: '/groupphoto.jpg',
+    alt: 'Group photo of KBM children',
+    aiHint: 'children group',
+    caption: 'The happy faces of the KBM family.',
+  },
+  {
+    src: '/groupphotomandir.jpg',
+    alt: 'Group photo at the temple',
+    aiHint: 'children temple',
+    caption: 'Gathered together at the temple.',
+  },
+  {
+    src: '/gyamtshoda.jpg',
+    alt: 'A student named Gyamtsho Da',
+    aiHint: 'student portrait',
+    caption: 'One of our bright students, Gyamtsho Da.',
+  },
+  {
+    src: '/hostel1.jpg',
+    alt: 'The KBM hostel building',
+    aiHint: 'hostel building',
+    caption: 'The safe and welcoming KBM hostel.',
+  },
+  {
+    src: '/KBM_Assembly_Cinematic_2x.jpg',
+    alt: 'Morning assembly at KBM',
+    aiHint: 'student assembly',
+    caption: 'Starting the day with morning assembly.',
+  },
+  {
+    src: '/sucess.jpg',
+    alt: 'A successful KBM student',
+    aiHint: 'student success',
+    caption: 'Celebrating the success of our students.',
+  },
+  {
+    src: '/sucess2.jpg',
+    alt: 'Another successful KBM student',
+    aiHint: 'student achievement',
+    caption: 'Another story of achievement and hope.',
+  },
+  {
     src: 'https://picsum.photos/800/600',
     alt: 'Children studying in a classroom',
     aiHint: 'children studying',
@@ -19,30 +79,6 @@ const galleryItems = [
     alt: 'Children playing in the yard',
     aiHint: 'children playing',
     caption: 'Joyful moments during afternoon playtime.',
-  },
-  {
-    src: 'https://picsum.photos/800/600',
-    alt: 'Group photo of children and staff',
-    aiHint: 'group photo children',
-    caption: 'Our KBM family, growing and thriving together.',
-  },
-  {
-    src: 'https://picsum.photos/800/600',
-    alt: 'A child smiling',
-    aiHint: 'child smiling',
-    caption: 'Nurturing hope and happiness every day.',
-  },
-  {
-    src: 'https://picsum.photos/800/601',
-    alt: 'New dormitory building',
-    aiHint: 'dormitory building',
-    caption: 'Our modern and safe dormitory facilities.',
-  },
-  {
-    src: 'https://picsum.photos/800/602',
-    alt: 'Students in computer lab',
-    aiHint: 'computer lab students',
-    caption: 'Equipping students with modern IT skills.',
   },
 ];
 
