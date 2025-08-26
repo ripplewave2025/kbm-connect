@@ -15,7 +15,7 @@ const galleryItems = [
     caption: 'founder Venerable Dhamma Dhiroo',
   },
   {
-    src: '/gallery/bhanteji1.jpg',
+    src: '/gallery/bhanteji3.jpg',
     alt: 'Venerable Dhammaviriyo Mahathero with children',
     aiHint: 'monk children',
     caption: 'Guiding the next generation with wisdom.',
