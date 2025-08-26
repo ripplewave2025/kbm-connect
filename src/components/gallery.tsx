@@ -9,16 +9,16 @@ import {
 
 const galleryItems = [
   {
-    src: '/gallery/bhanteji3.jpg',
+    src: '/gallery/groupphoto.jpg',
     alt: 'Our Founder, Venerable Dhamma Dhiroo',
-    aiHint: 'monk portrait',
-    caption: 'Guiding the next generation with wisdom.',
+    aiHint: 'children group',
+    caption: 'Our Founder, Venerable Dhamma Dhiroo',
   },
   {
-    src: '/gallery/groupphoto.jpg',
+    src: '/gallery/bhanteji1.jpg',
     alt: 'Group photo of KBM children',
-    aiHint: 'children group',
-    caption: 'The happy faces of the KBM family.',
+    aiHint: 'monk portrait',
+    caption: 'Guiding the next generation with wisdom.',
   },
   {
     src: '/gallery/groupphotomandir.jpg',
