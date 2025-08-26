@@ -17,7 +17,7 @@ export default function HeroSection() {
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-headline tracking-tighter">
           Nurturing Futures, Inspiring Hope
         </h1>
-        <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-neutral-200">
+        <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-white">
           Providing a loving home, education, and holistic care for underprivileged children in Darjeeling since 1980.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
