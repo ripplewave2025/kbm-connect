@@ -21,10 +21,10 @@ export default function HeroSection() {
           Providing a loving home, education, and holistic care for underprivileged children in Darjeeling since 1980.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" asChild className="font-bold text-lg bg-primary text-primary-foreground hover:bg-primary/90">
+          <Button size="lg" asChild className="font-bold text-lg" variant="secondary">
             <Link href="#mission">Learn More</Link>
           </Button>
-          <Button size="lg" variant="secondary" asChild className="font-bold text-lg">
+          <Button size="lg" asChild className="font-bold text-lg bg-primary text-primary-foreground hover:bg-primary/90">
             <Link href="#get-involved">Donate Now</Link>
           </Button>
         </div>
