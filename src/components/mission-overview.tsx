@@ -21,12 +21,12 @@ export default function MissionOverview() {
             <Card className="overflow-hidden rounded-xl shadow-lg">
               <CardContent className="p-0">
                 <Image
-                  src="https://picsum.photos/600/700"
-                  alt="Founder of KBM"
+                  src="/hostel.jpg"
+                  alt="KBM Hostel"
                   width={600}
                   height={700}
                   className="object-cover"
-                  data-ai-hint="portrait monk"
+                  data-ai-hint="hostel building"
                 />
               </CardContent>
             </Card>
