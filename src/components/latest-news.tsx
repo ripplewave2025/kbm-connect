@@ -25,7 +25,7 @@ const newsItems = [
   {
     title: 'Happy 79th Independence Day!',
     description: "The children at KBM celebrated India's 79th Independence Day with a flag hoisting ceremony and cultural programs, thanks to the support from the Darjeeling Children's Trust.",
-    image: 'https://picsum.photos/600/400',
+    image: '/independenceday.png',
     date: 'August 2023',
     tag: 'Celebration',
     aiHint: 'children celebrating',
