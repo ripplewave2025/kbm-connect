@@ -56,12 +56,6 @@ const galleryItems = [
     aiHint: 'student assembly',
     caption: 'Starting the day with morning assembly.',
   },
-  {
-    src: '/gallery/sucess.jpg',
-    alt: 'A successful KBM student',
-    aiHint: 'student success',
-    caption: 'Celebrating the success of our students.',
-  },
 ];
 
 export default function Gallery() {
