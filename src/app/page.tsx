@@ -9,8 +9,8 @@ export default function Home() {
     <div className="flex flex-col">
       <HeroSection />
       <MissionOverview />
-      <Gallery />
       <LatestNews />
+      <Gallery />
       <GetInvolved />
     </div>
   );
