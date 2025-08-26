@@ -41,11 +41,22 @@ const newsItems = [
   {
     title: 'Celebrating Success: Graduation Day',
     description: 'Join us in congratulating our recent graduates! We are incredibly proud of their hard work and dedication. We wish them all the best as they embark on their next chapter.',
-    image: 'https://picsum.photos/600/400',
+    image: null,
     date: 'April 2024',
     tag: 'Education',
     aiHint: 'students graduating',
-    embed: null,
+    embed: (
+      <iframe
+        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0ZXTh3BW6zeyjktBdtn8aPmo4FoH7TWYuUPpaTYxjra1vBW862gWp8DkJpDdzwgrgl%26id%3D100083859907985&show_text=true&width=500"
+        width="500"
+        height="250"
+        style={{ border: 'none', overflow: 'hidden' }}
+        scrolling="no"
+        frameBorder="0"
+        allowFullScreen={true}
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      ></iframe>
+    ),
   },
 ];
 
