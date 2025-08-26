@@ -8,7 +8,7 @@ export default function FounderSpotlight() {
           <div className="flex justify-center">
             <div className="rounded-xl overflow-hidden shadow-lg aspect-[4/5] w-full max-w-sm">
               <Image
-                src="/gallery/bhanteji.jpg"
+                src="/gallery/bhanteji3.jpg"
                 alt="Venerable Dhamma Dhiroo"
                 width={400}
                 height={500}
