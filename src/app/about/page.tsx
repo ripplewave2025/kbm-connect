@@ -22,12 +22,12 @@ export default function AboutPage() {
           </div>
           <div className="rounded-xl overflow-hidden shadow-lg">
             <Image
-              src="https://picsum.photos/600/500"
+              src="/hostel.jpg"
               alt="Group of children at KBM"
               width={600}
               height={500}
               className="object-cover w-full h-full"
-              data-ai-hint="happy children group"
+              data-ai-hint="hostel building"
             />
           </div>
         </div>
