@@ -1,4 +1,4 @@
-import { Menu, Mountain } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from './ui/button';
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
@@ -16,7 +16,6 @@ export default function Header() {
     <header className="sticky top-0 z-50 flex h-16 items-center gap-4 border-b bg-background/80 px-4 backdrop-blur-sm md:px-6">
       <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
         <Link href="/" className="flex items-center gap-2 font-semibold md:text-base">
-          <Mountain className="h-6 w-6 text-primary" />
           <span className="sr-only">KBM Darjeeling</span>
         </Link>
         <Link href="/" className="font-headline text-lg font-bold text-foreground">
@@ -33,7 +32,6 @@ export default function Header() {
         <SheetContent side="left">
           <nav className="grid gap-6 text-lg font-medium">
             <Link href="/" className="flex items-center gap-2 text-lg font-semibold">
-              <Mountain className="h-6 w-6 text-primary" />
               <span className="font-headline">KBM Darjeeling</span>
             </Link>
             {navLinks.map((link) => (

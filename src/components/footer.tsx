@@ -1,4 +1,3 @@
-import { Mountain } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -6,7 +5,6 @@ export default function Footer() {
     <footer className="bg-background border-t">
       <div className="container mx-auto flex flex-col items-center justify-between gap-6 py-8 px-4 md:flex-row md:px-6">
         <div className="flex items-center gap-2">
-          <Mountain className="h-6 w-6 text-primary" />
           <span className="font-headline text-lg font-semibold">KBM Darjeeling</span>
         </div>
         <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} Kripasaran Buddhist Mission. All rights reserved.</p>
