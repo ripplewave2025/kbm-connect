@@ -11,7 +11,7 @@ export default function LoginPage() {
       <Card className="w-full max-w-sm shadow-lg">
         <CardHeader className="text-center">
           <CardTitle className="font-headline text-3xl">Member Login</CardTitle>
-          <CardDescription>Access your KBM Connect member account.</CardDescription>
+          <CardDescription>Access your KBM Darjeeling member account.</CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="space-y-2">
