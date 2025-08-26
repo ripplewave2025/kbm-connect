@@ -4,13 +4,19 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 
 const newsItems = [
   {
-    title: 'A Brush with Art: The 2024 Art Competition',
-    description: "Our annual art competition was a huge success! The children showcased their incredible talent, with themes of nature and community. Thank you to everyone who participated and supported this wonderful event.",
-    image: 'https://picsum.photos/600/400',
-    date: 'June 2024',
-    tag: 'Event',
-    aiHint: 'children painting',
-    embed: null,
+    title: "Darjeeling Children's Trust News",
+    description: "Read the latest news and updates directly from our partner, the Darjeeling Children's Trust.",
+    image: null,
+    date: 'Latest',
+    tag: 'DCT News',
+    aiHint: '',
+    embed: (
+      <iframe
+        src="https://darjeelingchildrenstrust.org.uk/welcome/"
+        className="h-full w-full"
+        title="Darjeeling Children's Trust News"
+      />
+    ),
   },
   {
     title: 'Nurturing Health: Our Latest Medical Camp',
