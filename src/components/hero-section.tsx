@@ -1,17 +1,16 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from './ui/button';
 
 export default function HeroSection() {
   return (
-    <section className="relative h-[60vh] md:h-[80vh] w-full flex items-center justify-center text-white">
-      <Image
-        src="https://picsum.photos/1800/1200"
-        alt="Children at Kripasaran Buddhist Mission"
-        fill
-        className="object-cover"
-        priority
-        data-ai-hint="happy children"
+    <section className="relative h-[60vh] md:h-[80vh] w-full flex items-center justify-center text-white overflow-hidden">
+      <video
+        src="/herovideo.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute z-0 w-auto min-w-full min-h-full max-w-none object-cover"
       />
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 text-center px-4">
