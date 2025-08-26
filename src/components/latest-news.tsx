@@ -4,28 +4,38 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 
 const newsItems = [
   {
-    title: "Phase 1: A New Home for Boys",
-    description: "The crumbling, 87-year-old boys' hostel was replaced with a new, safe multi-storey building, completed in 2014, providing a secure home for 60 boys.",
-    image: "/hostel.jpg",
-    date: "November 2014",
-    tag: "Milestone",
-    aiHint: "hostel building",
+    title: 'New home for the boys and girls',
+    embed: (
+      <iframe
+        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0MiiKRDg6H1D3KuXaQyPt3ZMz5ba4Ze48vbqx782zsNUWFf5o8jkn6LHHimRXmsCNl%26id%3D100083859907985&show_text=true&width=500"
+        width="500"
+        height="600"
+        style={{ border: 'none', overflow: 'hidden' }}
+        allowFullScreen={true}
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      ></iframe>
+    ),
+    description: "Our new building provides a safe and modern home for both boys and girls, thanks to the generous support of our partners.",
+    image: null,
+    date: 'Recent Update',
+    tag: 'Community',
+    aiHint: 'facebook post',
   },
   {
-    title: "Phase 2: Modern Hostels for Girls",
-    description: "New dormitories and facilities were constructed for the girls between 2019 and 2021, replacing cramped quarters with bright, airy, and safe living spaces.",
-    image: "https://picsum.photos/600/400",
-    date: "October 2021",
-    tag: "Completed",
-    aiHint: "girl dormitory",
+    title: 'Phase 2: Modern Hostels for Girls',
+    description: 'New dormitories and facilities were constructed for the girls between 2019 and 2021, replacing cramped quarters with bright, airy, and safe living spaces.',
+    image: 'https://picsum.photos/600/400',
+    date: 'October 2021',
+    tag: 'Completed',
+    aiHint: 'girl dormitory',
   },
   {
-    title: "Educational Enrichment",
-    description: "In 2023, a new computer lab with 10 computers and Wi-Fi was established, alongside a growing library, providing children with vital IT skills and learning resources.",
-    image: "https://picsum.photos/600/400",
-    date: "August 2023",
-    tag: "Education",
-    aiHint: "computer lab",
+    title: 'Educational Enrichment',
+    description: 'In 2023, a new computer lab with 10 computers and Wi-Fi was established, alongside a growing library, providing children with vital IT skills and learning resources.',
+    image: 'https://picsum.photos/600/400',
+    date: 'August 2023',
+    tag: 'Education',
+    aiHint: 'computer lab',
   },
 ];
 
@@ -41,16 +51,22 @@ export default function LatestNews() {
           {newsItems.map((item) => (
             <Card key={item.title} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader className="p-0">
-                <div className="aspect-w-16 aspect-h-9">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    width={600}
-                    height={400}
-                    className="object-cover w-full h-full"
-                    data-ai-hint={item.aiHint}
-                  />
-                </div>
+                {item.embed ? (
+                  <div className="aspect-w-16 aspect-h-9 w-full overflow-hidden flex justify-center">
+                    {item.embed}
+                  </div>
+                ) : (
+                  <div className="aspect-w-16 aspect-h-9">
+                    <Image
+                      src={item.image!}
+                      alt={item.title}
+                      width={600}
+                      height={400}
+                      className="object-cover w-full h-full"
+                      data-ai-hint={item.aiHint}
+                    />
+                  </div>
+                )}
               </CardHeader>
               <CardContent className="p-6 flex-grow">
                 <CardTitle className="font-headline text-xl mb-2">{item.title}</CardTitle>
