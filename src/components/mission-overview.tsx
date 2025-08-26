@@ -11,7 +11,7 @@ export default function MissionOverview() {
               Our Mission: A Haven of Hope
             </h2>
             <p className="text-muted-foreground text-lg">
-              Kripasaran Buddhist Mission (KBM) is a Darjeeling-based charitable organization dedicated to caring for underprivileged and orphaned children. Founded in 1980 by Venerable Dhammaviriyo Mahathero, we provide about 100 children with free education, shelter, food, clothing, and medical support.
+              Kripasaran Buddhist Mission (KBM) is a Darjeeling-based charitable organization dedicated to caring for underprivileged and orphaned children. Founded in 1975 by Venerable Dhammaviriyo Mahathero, we provide about 100 children with free education, shelter, food, clothing, and medical support.
             </p>
             <p className="text-muted-foreground text-lg">
               Our core mission is to ensure vulnerable children have a safe upbringing and access to schooling, empowering them to build a brighter future. Through our partnership with Darjeeling Children’s Trust, we have transformed our facilities into a modern, purpose-built campus where children can thrive.
