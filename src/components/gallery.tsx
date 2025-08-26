@@ -74,12 +74,6 @@ const galleryItems = [
     aiHint: 'children studying',
     caption: 'Bright minds at work in our classrooms.',
   },
-  {
-    src: 'https://picsum.photos/800/600',
-    alt: 'Children playing in the yard',
-    aiHint: 'children playing',
-    caption: 'Joyful moments during afternoon playtime.',
-  },
 ];
 
 export default function Gallery() {
