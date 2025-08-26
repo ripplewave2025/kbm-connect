@@ -21,11 +21,22 @@ const newsItems = [
   {
     title: 'Nurturing Health: Our Latest Medical Camp',
     description: 'We successfully conducted a comprehensive health check-up for all our children. Regular medical camps are a cornerstone of our commitment to their well-being, ensuring they grow up healthy and strong.',
-    image: 'https://picsum.photos/600/400',
+    image: null,
     date: 'May 2024',
     tag: 'Health',
-    aiHint: 'child doctor',
-    embed: null,
+    aiHint: '',
+    embed: (
+      <iframe
+        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0LJohkTGDqdsoAUkZaVhThrsoeAJCzBYPMiEH8FpC6NHE8suWLvbQbBDMyNo3rEQsl%26id%3D100083859907985&show_text=true&width=500"
+        width="500"
+        height="744"
+        style={{ border: 'none', overflow: 'hidden' }}
+        scrolling="no"
+        frameBorder="0"
+        allowFullScreen={true}
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      ></iframe>
+    ),
   },
   {
     title: 'Celebrating Success: Graduation Day',
@@ -40,7 +51,7 @@ const newsItems = [
 
 export default function LatestNews() {
   return (
-    <section id="news" className="w-full py-16 md:py-24 bg-secondary">
+    <section id="news" className="w-full py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="font-headline text-3xl md:text-4xl font-bold">Latest News & Milestones</h2>
@@ -52,7 +63,7 @@ export default function LatestNews() {
               <CardHeader className="p-0">
                 {item.embed ? (
                   <div className="aspect-video w-full overflow-hidden flex justify-center items-center bg-white">
-                    <div className="h-[400px] w-full overflow-y-auto">
+                    <div className="h-full w-full overflow-y-auto">
                       {item.embed}
                     </div>
                   </div>
