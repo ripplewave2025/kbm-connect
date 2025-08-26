@@ -21,11 +21,22 @@ const newsItems = [
   {
     title: 'A Royal Visit: Strengthening Ties',
     description: 'Honored to welcome Miss Siriporn Tantipanyathep, Royal Thai Consul-General, to our children’s home in Darjeeling. In celebration of His Majesty the King of Thailand’s birthday, the visit included generous donations and a wonderful tree-planting ceremony, symbolizing the growth and friendship between our communities.',
-    image: "https://picsum.photos/600/400",
+    image: null,
     date: 'June 2024',
     tag: 'Event',
     aiHint: 'dignitary visit',
-    embed: null,
+    embed: (
+      <iframe
+        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0LJohkTGDqdsoAUkZaVhThrsoeAJCzBYPMiEH8FpC6NHE8suWLvbQbBDMyNo3rEQsl%26id%3D100083859907985&show_text=true&width=500"
+        width="500"
+        height="250"
+        style={{ border: 'none', overflow: 'hidden' }}
+        scrolling="no"
+        frameBorder="0"
+        allowFullScreen={true}
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      ></iframe>
+    ),
   },
   {
     title: 'Celebrating Success: Graduation Day',
