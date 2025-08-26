@@ -26,7 +26,7 @@ export default function GetInvolved() {
                 <div className="mt-2 flex flex-col items-center gap-2 text-muted-foreground">
                   <div className="flex items-center gap-2">
                     <Mail className="h-4 w-4" />
-                    <a href="mailto:info@kbm.org" className="hover:text-primary">info@kbm.org</a>
+                    <a href="mailto:pemabhante@gmail.com" className="hover:text-primary">pemabhante@gmail.com</a>
                   </div>
                   <div className="flex items-center gap-2">
                     <Phone className="h-4 w-4" />
