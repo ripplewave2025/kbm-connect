@@ -22,7 +22,7 @@ export default function FounderSpotlight() {
               A Lifetime of Dedication
             </h2>
             <p className="text-muted-foreground text-lg">
-              The heart of the Kripasaran Buddhist Mission is Venerable Dhamma Dhiroo, a man whose life is a testament to selfless service. He not only runs the home today but also grew up within its very walls.
+              The heart of the Kripasaran Buddhist Mission is Dr. Dhamma Dhiroo (Dr. Pema wangdi Sherpa), a man whose life is a testament to selfless service. He not only runs the home today but also grew up within its very walls.
             </p>
             <p className="text-muted-foreground text-lg">
               Having studied and lived his entire life as a monk at the mission, he embodies the spirit of compassion and dedication that defines our work. His unwavering commitment ensures that the children in our care receive the same love and opportunity that shaped him. We are immensely proud to have such an inspirational figure leading our home.
