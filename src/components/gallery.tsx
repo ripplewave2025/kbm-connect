@@ -12,7 +12,7 @@ const galleryItems = [
     src: '/gallery/bhanteji.jpg',
     alt: 'Our Founder, Venerable Dhamma Dhiroo',
     aiHint: 'monk portrait',
-    caption: 'Our Founder, Venerable Dhamma Dhiroo',
+    caption: 'founder Venerable Dhamma Dhiroo',
   },
   {
     src: '/gallery/bhanteji1.jpg',
