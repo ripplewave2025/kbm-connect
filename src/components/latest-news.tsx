@@ -22,6 +22,14 @@ const newsItems = [
     aiHint: 'facebook post',
   },
   {
+    title: 'Happy 79th Independence Day!',
+    description: "The children at KBM celebrated India's 79th Independence Day with a flag hoisting ceremony and cultural programs, thanks to the support from the Darjeeling Children's Trust.",
+    image: 'https://picsum.photos/600/400',
+    date: 'August 2023',
+    tag: 'Celebration',
+    aiHint: 'children celebrating',
+  },
+  {
     title: 'Phase 2: Modern Hostels for Girls',
     description: 'New dormitories and facilities were constructed for the girls between 2019 and 2021, replacing cramped quarters with bright, airy, and safe living spaces.',
     image: 'https://picsum.photos/600/400',
