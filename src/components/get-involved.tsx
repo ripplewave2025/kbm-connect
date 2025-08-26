@@ -30,7 +30,7 @@ export default function GetInvolved() {
                   </div>
                   <div className="flex items-center gap-2">
                     <Phone className="h-4 w-4" />
-                    <a href="tel:+911234567890" className="hover:text-primary">+91 123 456 7890</a>
+                    <a href="tel:+919434247991" className="hover:text-primary">+91 9434247991</a>
                   </div>
                 </div>
               </div>
