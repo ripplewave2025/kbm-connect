@@ -18,7 +18,7 @@ export default function HeroSection() {
           Nurturing Futures, Inspiring Hope
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-white">
-          Providing a loving home, education, and holistic care for underprivileged children in Darjeeling since 1980.
+          Providing a loving home, education, and holistic care for underprivileged children in Darjeeling since 1975.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" asChild className="font-bold text-lg" variant="secondary">
