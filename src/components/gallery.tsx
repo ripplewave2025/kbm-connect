@@ -50,12 +50,6 @@ const galleryItems = [
     aiHint: 'hostel building',
     caption: 'The safe and welcoming KBM hostel.',
   },
-  {
-    src: '/gallery/KBM_Assembly_Cinematic_2x.jpg',
-    alt: 'Morning assembly at KBM',
-    aiHint: 'student assembly',
-    caption: 'Starting the day with morning assembly.',
-  },
 ];
 
 export default function Gallery() {
