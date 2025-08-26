@@ -21,12 +21,6 @@ const galleryItems = [
     caption: 'Guiding the next generation with wisdom.',
   },
   {
-    src: '/gallery/Gallery_Sikkimprogramme_HQ.jpg',
-    alt: 'Children at a program in Sikkim',
-    aiHint: 'children event',
-    caption: 'Cultural exchange during our Sikkim programme.',
-  },
-  {
     src: '/gallery/groupphoto.jpg',
     alt: 'Group photo of KBM children',
     aiHint: 'children group',
