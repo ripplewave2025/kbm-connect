@@ -62,12 +62,6 @@ const galleryItems = [
     aiHint: 'student success',
     caption: 'Celebrating the success of our students.',
   },
-  {
-    src: '/gallery/sucess2.jpg',
-    alt: 'Another successful KBM student',
-    aiHint: 'student achievement',
-    caption: 'Another story of achievement and hope.',
-  },
 ];
 
 export default function Gallery() {
