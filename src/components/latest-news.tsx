@@ -1,72 +1,77 @@
+'use client';
+
 import Image from 'next/image';
 import { Badge } from './ui/badge';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from './ui/card';
-
-const newsItems = [
-  {
-    title: "Darjeeling Children's Trust News",
-    description: "Read the latest news and updates directly from our partner, the Darjeeling Children's Trust.",
-    image: null,
-    date: 'Latest',
-    tag: 'DCT News',
-    aiHint: '',
-    embed: (
-      <iframe
-        src="https://darjeelingchildrenstrust.org.uk/welcome/"
-        className="h-full w-full"
-        title="Darjeeling Children's Trust News"
-      />
-    ),
-  },
-  {
-    title: 'A Royal Visit: Strengthening Ties',
-    description: 'Honored to welcome Miss Siriporn Tantipanyathep, Royal Thai Consul-General, to our children’s home in Darjeeling. In celebration of His Majesty the King of Thailand’s birthday, the visit included generous donations and a wonderful tree-planting ceremony, symbolizing the growth and friendship between our communities.',
-    image: null,
-    date: 'June 2024',
-    tag: 'Event',
-    aiHint: 'dignitary visit',
-    embed: (
-      <iframe
-        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0LJohkTGDqdsoAUkZaVhThrsoeAJCzBYPMiEH8FpC6NHE8suWLvbQbBDMyNo3rEQsl%26id%3D100083859907985&show_text=true&width=500"
-        width="500"
-        height="250"
-        style={{ border: 'none', overflow: 'hidden' }}
-        scrolling="no"
-        frameBorder="0"
-        allowFullScreen={true}
-        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-      ></iframe>
-    ),
-  },
-  {
-    title: 'Celebrating Success: Graduation Day',
-    description: 'Join us in congratulating our recent graduates! We are incredibly proud of their hard work and dedication. We wish them all the best as they embark on their next chapter.',
-    image: null,
-    date: 'April 2024',
-    tag: 'Education',
-    aiHint: 'students graduating',
-    embed: (
-      <iframe
-        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0ZXTh3BW6zeyjktBdtn8aPmo4FoH7TWYuUPpaTYxjra1vBW862gWp8DkJpDdzwgrgl%26id%3D100083859907985&show_text=true&width=500"
-        width="500"
-        height="250"
-        style={{ border: 'none', overflow: 'hidden' }}
-        scrolling="no"
-        frameBorder="0"
-        allowFullScreen={true}
-        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-      ></iframe>
-    ),
-  },
-];
+import { useLanguage } from '@/contexts/language-context';
 
 export default function LatestNews() {
+  const { t } = useLanguage();
+
+  const newsItems = [
+    {
+      title: t('news.items.item1.title'),
+      description: t('news.items.item1.description'),
+      image: null,
+      date: t('news.latest'),
+      tag: t('news.items.item1.tag'),
+      aiHint: '',
+      embed: (
+        <iframe
+          src="https://darjeelingchildrenstrust.org.uk/welcome/"
+          className="h-full w-full"
+          title="Darjeeling Children's Trust News"
+        />
+      ),
+    },
+    {
+      title: t('news.items.item2.title'),
+      description: t('news.items.item2.description'),
+      image: null,
+      date: t('news.june2024'),
+      tag: t('news.items.item2.tag'),
+      aiHint: 'dignitary visit',
+      embed: (
+        <iframe
+          src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0LJohkTGDqdsoAUkZaVhThrsoeAJCzBYPMiEH8FpC6NHE8suWLvbQbBDMyNo3rEQsl%26id%3D100083859907985&show_text=true&width=500"
+          width="500"
+          height="250"
+          style={{ border: 'none', overflow: 'hidden' }}
+          scrolling="no"
+          frameBorder="0"
+          allowFullScreen={true}
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+        ></iframe>
+      ),
+    },
+    {
+      title: t('news.items.item3.title'),
+      description: t('news.items.item3.description'),
+      image: null,
+      date: t('news.april2024'),
+      tag: t('news.items.item3.tag'),
+      aiHint: 'students graduating',
+      embed: (
+        <iframe
+          src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0ZXTh3BW6zeyjktBdtn8aPmo4FoH7TWYuUPpaTYxjra1vBW862gWp8DkJpDdzwgrgl%26id%3D100083859907985&show_text=true&width=500"
+          width="500"
+          height="250"
+          style={{ border: 'none', overflow: 'hidden' }}
+          scrolling="no"
+          frameBorder="0"
+          allowFullScreen={true}
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+        ></iframe>
+      ),
+    },
+  ];
+
   return (
     <section id="news" className="w-full py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold">Latest News & Milestones</h2>
-          <p className="mt-2 text-lg text-muted-foreground">Follow our journey of transformation and hope.</p>
+          <h2 className="font-headline text-3xl md:text-4xl font-bold">{t('news.title')}</h2>
+          <p className="mt-2 text-lg text-muted-foreground">{t('news.subtitle')}</p>
         </div>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {newsItems.map((item) => (

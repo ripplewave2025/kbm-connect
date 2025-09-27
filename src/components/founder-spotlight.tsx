@@ -1,6 +1,10 @@
+'use client';
+
+import { useLanguage } from '@/contexts/language-context';
 import Image from 'next/image';
 
 export default function FounderSpotlight() {
+  const { t } = useLanguage();
   return (
     <section id="founder" className="w-full py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-4 md:px-6">
@@ -19,13 +23,13 @@ export default function FounderSpotlight() {
           </div>
           <div className="space-y-4">
             <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tighter">
-              A Lifetime of Dedication
+              {t('founder.title')}
             </h2>
             <p className="text-muted-foreground text-lg">
-              The heart of the Kripasaran Buddhist Mission is Dr. Dhamma Dhiroo (Dr. Pema wangdi Sherpa), a man whose life is a testament to selfless service. He not only runs the home today but also grew up within its very walls.
+              {t('founder.p1')}
             </p>
             <p className="text-muted-foreground text-lg">
-              Having studied and lived his entire life as a monk at the mission, he embodies the spirit of compassion and dedication that defines our work. His unwavering commitment ensures that the children in our care receive the same love and opportunity that shaped him. We are immensely proud to have such an inspirational figure leading our home.
+              {t('founder.p2')}
             </p>
           </div>
         </div>

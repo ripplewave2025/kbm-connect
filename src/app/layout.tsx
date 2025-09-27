@@ -3,6 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
+import { LanguageProvider } from '@/contexts/language-context';
 
 export const metadata: Metadata = {
   title: 'KBM Darjeeling',
@@ -25,10 +26,12 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body antialiased">
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        <Toaster />
+        <LanguageProvider>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+          <Toaster />
+        </LanguageProvider>
       </body>
     </html>
   );

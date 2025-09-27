@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import {
   Carousel,
@@ -6,47 +8,49 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
-
-const galleryItems = [
-  {
-    src: '/gallery/groupphoto.jpg',
-    alt: 'Our Founder, Venerable Dhamma Dhiroo',
-    aiHint: 'children group',
-    caption: 'Our Founder, Venerable Dhamma Dhiroo',
-  },
-  {
-    src: '/gallery/bhanteji1.jpg',
-    alt: 'Group photo of KBM children',
-    aiHint: 'monk portrait',
-    caption: 'Guiding the next generation with wisdom.',
-  },
-  {
-    src: '/gallery/groupphotomandir.jpg',
-    alt: 'Group photo at the temple',
-    aiHint: 'children temple',
-    caption: 'Gathered together at the temple.',
-  },
-  {
-    src: '/gallery/gyamtshoda.jpg',
-    alt: 'A student named Gyamtsho Da',
-    aiHint: 'student portrait',
-    caption: 'One of our bright students, Gyamtsho Da.',
-  },
-  {
-    src: '/gallery/hostel1.jpg',
-    alt: 'The KBM hostel building',
-    aiHint: 'hostel building',
-    caption: 'The safe and welcoming KBM hostel.',
-  },
-];
+import { useLanguage } from '@/contexts/language-context';
 
 export default function Gallery() {
+  const { t } = useLanguage();
+  const galleryItems = [
+    {
+      src: '/gallery/bhanteji1.jpg',
+      alt: t('gallery.captions.img1'),
+      aiHint: 'children group',
+      caption: t('gallery.captions.img1'),
+    },
+    {
+      src: '/gallery/bhanteji1.jpg',
+      alt: t('gallery.captions.img2'),
+      aiHint: 'monk portrait',
+      caption: t('gallery.captions.img2'),
+    },
+    {
+      src: '/gallery/groupphotomandir.jpg',
+      alt: t('gallery.captions.img3'),
+      aiHint: 'children temple',
+      caption: t('gallery.captions.img3'),
+    },
+    {
+      src: '/gallery/gyamtshoda.jpg',
+      alt: t('gallery.captions.img4'),
+      aiHint: 'student portrait',
+      caption: t('gallery.captions.img4'),
+    },
+    {
+      src: '/gallery/hostel1.jpg',
+      alt: t('gallery.captions.img5'),
+      aiHint: 'hostel building',
+      caption: t('gallery.captions.img5'),
+    },
+  ];
+
   return (
     <section id="gallery" className="w-full py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold">Gallery</h2>
-          <p className="mt-2 text-lg text-muted-foreground">A glimpse into daily life at the Kripasaran Buddhist Mission.</p>
+          <h2 className="font-headline text-3xl md:text-4xl font-bold">{t('gallery.title')}</h2>
+          <p className="mt-2 text-lg text-muted-foreground">{t('gallery.subtitle')}</p>
         </div>
         <Carousel
           opts={{
