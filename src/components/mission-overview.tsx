@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { Card, CardContent } from './ui/card';
 import { useLanguage } from '@/contexts/language-context';
+import GlowingText from '@/components/glowing-text';
 
 export default function MissionOverview() {
   const { t } = useLanguage();
@@ -14,12 +15,14 @@ export default function MissionOverview() {
             <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tighter">
               {t('mission.title')}
             </h2>
-            <p className="text-muted-foreground text-lg">
-              {t('mission.p1')}
-            </p>
-            <p className="text-muted-foreground text-lg">
-              {t('mission.p2')}
-            </p>
+            <GlowingText
+              text={t('mission.p1')}
+              className="text-muted-foreground text-lg block"
+            />
+            <GlowingText
+              text={t('mission.p2')}
+              className="text-muted-foreground text-lg block"
+            />
           </div>
           <div className="flex justify-center">
             <Card className="overflow-hidden rounded-xl shadow-lg">

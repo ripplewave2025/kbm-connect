@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Button } from './ui/button';
 import { useLanguage } from '@/contexts/language-context';
+import GlowingText from '@/components/glowing-text';
 
 export default function HeroSection() {
   const { t } = useLanguage();
@@ -21,9 +22,10 @@ export default function HeroSection() {
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-headline tracking-tighter">
           {t('hero.title')}
         </h1>
-        <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-white">
-          {t('hero.subtitle')}
-        </p>
+        <GlowingText
+          text={t('hero.subtitle')}
+          className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-white block"
+        />
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" asChild className="font-bold text-lg" variant="secondary">
             <Link href="#mission">{t('hero.learnMore')}</Link>

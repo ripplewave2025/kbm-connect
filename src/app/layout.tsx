@@ -5,6 +5,8 @@ import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import { LanguageProvider } from '@/contexts/language-context';
+import ScrollProgress from '@/components/scroll-progress';
+import BackToTop from '@/components/back-to-top';
 
 export const metadata: Metadata = {
   title: 'KBM Darjeeling',
@@ -28,9 +30,11 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased">
         <LanguageProvider>
+          <ScrollProgress />
           <Header />
           <main>{children}</main>
           <Footer />
+          <BackToTop />
           <Toaster />
         </LanguageProvider>
         <Analytics />

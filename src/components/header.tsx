@@ -11,6 +11,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from './ui/dropdown-menu';
+import LanguageToggle from './language-toggle';
 
 export default function Header() {
   const { t, setLanguage, language } = useLanguage();
@@ -50,6 +51,10 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
+            <div className="pt-4 border-t">
+              <p className="text-xs font-semibold text-muted-foreground mb-3 uppercase tracking-wider">{t('header.selectLanguage') || 'Select Language'}</p>
+              <LanguageToggle />
+            </div>
           </nav>
         </SheetContent>
       </Sheet>
@@ -61,27 +66,7 @@ export default function Header() {
             </Link>
           ))}
         </nav>
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant="outline" size="icon">
-              <Globe className="h-5 w-5" />
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent>
-            <DropdownMenuItem onSelect={() => setLanguage('en')} disabled={language === 'en'}>
-              English
-            </DropdownMenuItem>
-            <DropdownMenuItem onSelect={() => setLanguage('ne')} disabled={language === 'ne'}>
-              नेपाली (Nepali)
-            </DropdownMenuItem>
-            <DropdownMenuItem onSelect={() => setLanguage('th')} disabled={language === 'th'}>
-              ไทย (Thai)
-            </DropdownMenuItem>
-            <DropdownMenuItem onSelect={() => setLanguage('zh')} disabled={language === 'zh'}>
-              中文 (Chinese)
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
+        <LanguageToggle />
         <Button asChild className="font-bold">
           <Link href="/login">{t('header.memberLogin')}</Link>
         </Button>
